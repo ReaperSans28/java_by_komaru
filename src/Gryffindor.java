@@ -1,4 +1,5 @@
 public class Gryffindor extends Student {
+    // ГРИФИНДОР!
     private int nobility;
     private int honor;
     private int bravery;

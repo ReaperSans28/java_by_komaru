@@ -1,4 +1,5 @@
 class Student {
+    // А могли быть студентами Singularity hub, вообще-то тоже волшебное место
     private String name;
     private int magicPower;
     private int transgressionDistance;

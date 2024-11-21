@@ -1,6 +1,6 @@
 class Hogwarts {
     public static void main(String[] args) {
-        // Создание студентов
+        // Шаманы Токийского магического коллед... А не, это просто студенты Хогвартса
         Gryffindor hermione = new Gryffindor("Гермиона Грейнджер", 28, 8, 42, 3, 9);
         Gryffindor ron = new Gryffindor("Рон Уизли", 9, 99, 99, 99, 0);
         Gryffindor harry = new Gryffindor("Гарри Поттер", 0, 0, 0, 9, 0);

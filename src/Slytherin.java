@@ -1,4 +1,5 @@
 public class Slytherin extends Student {
+    // Шляпа миссанула, здесь должен был быть Гарри!!!
     private int cunning;
     private int determination;
     private int ambition;

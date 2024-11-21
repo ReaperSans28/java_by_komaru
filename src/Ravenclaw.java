@@ -1,4 +1,5 @@
 class Ravenclaw extends Student {
+    // Рейвенкло, прикольно звучит
     private int intelligence;
     private int wisdom;
     private int wit;

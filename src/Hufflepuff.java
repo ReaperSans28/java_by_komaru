@@ -1,4 +1,5 @@
 class Hufflepuff extends Student {
+    // Хуффлепуф????
     private int diligence;
     private int loyalty;
     private int honesty;
