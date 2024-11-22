@@ -35,63 +35,12 @@ class Hogwarts {
         marcus.showProperties();
 
         // Сравнение по статам
-        compareGryffindor(hermione, ron);
-        compareSlytherin(draco, gregory);
-        compareHufflepuff(zacharias, cedric);
-        compareRavenclaw(padma, marcus);
+        hermione.compareGryffindor(ron);
+        draco.compareSlytherin(gregory);
+        zacharias.compareHufflepuff(cedric);
+        padma.compareRavenclaw(marcus);
 
         // Сравнение по power и motivation Гарри и Драко
-        compareMagic(harry, draco);
-    }
-
-    static void compareMagic(Student student1, Student student2) {
-        if (student1.getMagicPower() + student1.getTransgressionDistance() > student2.getMagicPower() + student2.getTransgressionDistance()) {
-            System.out.println(student1.getName() + " сильнее, чем " + student2.getName());
-        } else if (student1.getMagicPower() + student1.getTransgressionDistance() < student2.getMagicPower() + student2.getTransgressionDistance()) {
-            System.out.println(student2.getName() + " сильнее, чем " + student1.getName());
-        } else {
-            System.out.println(student1.getName() + " и " + student2.getName() + " равны по силе магии и трансгрессии.");
-        }
-    }
-
-    static void compareGryffindor(Gryffindor student1, Gryffindor student2) {
-        int sum1 = student1.getNobility() + student1.getHonor() + student1.getBravery();
-        int sum2 = student2.getNobility() + student2.getHonor() + student2.getBravery();
-        if (sum1 > sum2) {
-            System.out.println(student1.getName() + " лучший Гриффиндорец, чем " + student2.getName());
-        } else {
-            System.out.println(student2.getName() + " лучший Гриффиндорец, чем " + student1.getName());
-        }
-    }
-
-    static void compareSlytherin(Slytherin student1, Slytherin student2) {
-        int sum1 = student1.getCunning() + student1.getDetermination() + student1.getAmbition() + student1.getResourcefulness() + student1.getDesireForPower();
-        int sum2 = student2.getCunning() + student2.getDetermination() + student2.getAmbition() + student2.getResourcefulness() + student2.getDesireForPower();
-        if (sum1 > sum2) {
-            System.out.println(student1.getName() + " лучший Слизеринец, чем " + student2.getName());
-        } else {
-            System.out.println(student2.getName() + " лучший Слизеренец, чем " + student1.getName());
-        }
-    }
-
-    static void compareHufflepuff(Hufflepuff student1, Hufflepuff student2) {
-        int sum1 = student1.getDiligence() + student1.getLoyalty() + student1.getHonesty();
-        int sum2 = student2.getDiligence() + student2.getLoyalty() + student2.getHonesty();
-        if (sum1 > sum2) {
-            System.out.println(student1.getName() + " лучший Пуффендуец, чем " + student2.getName());
-        } else {
-            System.out.println(student2.getName() + " лучший Пуффендуец, чем " + student1.getName());
-
-        }
-    }
-
-    static void compareRavenclaw(Ravenclaw student1, Ravenclaw student2) {
-        int sum1 = student1.getIntelligence() + student1.getWisdom() + student1.getWit() + student1.getCreativity();
-        int sum2 = student2.getIntelligence() + student2.getWisdom() + student2.getWit() + student2.getCreativity();
-        if (sum1 > sum2) {
-            System.out.println(student1.getName() + " лучший Когтевранец, чем " + student2.getName());
-        } else {
-            System.out.println(student2.getName() + " лучший Когтевранец, чем " + student1.getName());
-        }
+        harry.compareMagic(draco);
     }
 }

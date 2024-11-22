@@ -27,4 +27,14 @@ public class Gryffindor extends Student {
     public int getBravery() {
         return bravery;
     }
+
+    public void compareGryffindor(Gryffindor other) {
+        int sum1 = this.nobility + this.honor + this.bravery;
+        int sum2 = other.nobility + other.honor + other.bravery;
+        if (sum1 > sum2) {
+            System.out.println(this.getName() + " лучший Гриффиндорец, чем " + other.getName());
+        } else {
+            System.out.println(other.getName() + " лучший Гриффиндорец, чем " + this.getName());
+        }
+    }
 }
