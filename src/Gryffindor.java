@@ -13,7 +13,7 @@ public class Gryffindor extends Student {
 
     public void showProperties() {
         super.showProperties();
-        System.out.println("Ноблесть: " + nobility + ", Честь: " + honor + ", Храбрость: " + bravery);
+        System.out.println("Благородство: " + nobility + ", Честь: " + honor + ", Храбрость: " + bravery);
     }
 
     public int getNobility() {
